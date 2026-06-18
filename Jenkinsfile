@@ -26,7 +26,11 @@ pipeline{
 
       stage("Deploy"){
            steps{
-               bat "kubectl apply -f deployment.yaml";
+               bat '''
+                set KUBECONFIG=C:\\Users\\Shruti Kumari\\.kube\\config
+                kubectl apply -f deployment.yaml
+                kubectl apply -f service.yaml
+                '''
             }
         }
     }

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  selector:
+    app: spring-jenkins-deployment
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9191
+  type: NodePort
