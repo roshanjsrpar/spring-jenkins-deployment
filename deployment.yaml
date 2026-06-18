@@ -17,4 +17,4 @@ spec:
         image: spring-jenkins-deployment:latest
         imagePullPolicy: Never
         ports:
-        - containerPort: 8080
+        - containerPort: 9191
