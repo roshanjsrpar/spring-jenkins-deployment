@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: spring-jenkins-deployment:v2
+        image: rosjsr/spring-jenkins-deployment:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
