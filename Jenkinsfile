@@ -6,7 +6,7 @@ pipeline{
                git credentialsId: 'af14a470-bdb8-4c7d-9e09-0540f5009f05', url: 'https://github.com/roshanjsrpar/spring-jenkins-deployment'
             }
         }
-
+	
       stage("Test"){
            steps{
                bat "mvn test";
