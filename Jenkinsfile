@@ -36,7 +36,6 @@ pipeline{
                 set KUBECONFIG=C:\\Users\\Shruti Kumari\\.kube\\config
                 kubectl apply -f deployment.yaml
                 kubectl apply -f service.yaml
-                kubectl rollout status deployment/spring-jenkins-deployment
                 '''
             }
         }
