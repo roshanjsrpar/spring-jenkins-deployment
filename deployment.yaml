@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: spring-jenkins-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: spring-jenkins-deployment
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: spring-jenkins-deployment:latest
-        imagePullPolicy: Always
+        image: spring-jenkins-deployment:v2
+        imagePullPolicy: Never
         ports:
         - containerPort: 8080

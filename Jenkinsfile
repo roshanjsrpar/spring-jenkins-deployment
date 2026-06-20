@@ -20,13 +20,13 @@ pipeline{
 
 	  stage("Docker Build") {
             steps {
-                bat "docker build -t rosjsr/spring-jenkins-deployment:latest ."
+                bat "docker build -t rosjsr/spring-jenkins-deployment:v2 ."
             }
         }
 
         stage("Docker Push") {
             steps {
-                bat "docker push rosjsr/spring-jenkins-deployment:latest"
+                bat "docker push rosjsr/spring-jenkins-deployment:v2"
             }
         }
 
